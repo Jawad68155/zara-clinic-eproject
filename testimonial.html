@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body{
+            background: linear-gradient(to bottom, #0F2027, #203A43, #2C5364);
+      font-family: Arial, sans-serif;
+        }
+         .navbar {
+      /* background-color: #4c98af;  */
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      opacity: 10;
+      font-weight: bold;
+      .nav-link{
+        color: rgb(35, 185, 185);
+      }
+    }
+
+    .special-link {
+      background-color: #FFC107; 
+      color: #be2b2b !important; 
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    body {
+      padding-top: 70px; 
+    }
+    .navbar-nav{
+      margin-right: 60px;
+    }
+    .navbar-nav .nav-link {
+    color: #fcfbfb !important; 
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #10df6d !important; 
+}
+.testimonial-section {
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    color: white;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.img-circle {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    margin-right: 20px;
+}
+.details {
+    display: inline; 
+    vertical-align: middle;
+    color: white !important; 
+}
+
+.details h3 {
+    margin: 0; 
+    color: white;
+}
+
+.details p {
+    margin: 0; 
+    font-size: 14px; 
+    color: white;
+}
+.testimonial-details span {
+    margin-left: 10px;
+    color: white;
+}
+
+
+
+  </style>
+  <style>
+    .carousel-buttons {
+        position: absolute;
+        top: 95%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        height: 50px;
+        width: 50px;
+        /* text-align: center; */
+        font-weight: bold;
+        grid-gap: 10px;
+    }
+    </style>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary"> <!-- Background color set to blue -->
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/assets/images/logo.png" alt="Logo" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav"> <!-- Aligned to the right -->
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="testimonial.html">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="machine.html">Machine</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Attar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link special-link" href="Appointment.html"> <!-- Special link -->
+                        <span class="text-white">Appointment</span> <!-- White text color -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="testimonial-section">
+    <div class="container">
+        <h2 class="section-title" style="color: #fcfbfb;">Testimonials </h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="testimonial">
+                    <img src="/assets/images/Testimonial-1.jpg" alt="Doctor 1" class="img-circle">
+                    <div class="testimonial-details">
+                        <h3>Dr. John Doe<span>Specialty: Cardiology</span></h3>
+                        <p> I really appreciate the kindness of the medical team for me during my time at the hospital. My legs have recovered from the accident."</p>
+                    </div>
+                </div>
+            </div>
+            <section class="testimonial-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="testimonial">
+                                <img src="/assets/images/Testimonial-2.jpg" alt="Doctor 1" class="img-circle">
+                                <div class="testimonial-details">
+                                    <h3>Hary Souler<span>Specialty: Cardiology</span></h3>
+                                    <p> I really appreciate the kindness of the medical team for me during my time at the hospital. My legs have recovered from the accident."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="testimonial-section">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="testimonial">
+                                            <img src="/assets/images/Testimonial-3.jpg" alt="Doctor 1" class="img-circle">
+                                            <div class="testimonial-details">
+                                                <h3>Dr. Ai Lillin<span>Specialty: Cardiology</span></h3>
+                                                <p> I really appreciate the kindness of the medical team for me during my time at the hospital. My legs have recovered from the accident."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <section class="testimonial-section">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="testimonial">
+                                                        <img src="/assets/images/Testimonial-4.jpg" alt="Doctor 1" class="img-circle">
+                                                        <div class="testimonial-details">
+                                                            <h3>Dr. Andy Loid<span>Specialty: Cardiology</span></h3>
+                                                            <p> I really appreciate the kindness of the medical team for me during my time at the hospital. My legs have recovered from the accident."</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <section class="testimonial-section">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="testimonial">
+                                                                    <img src="/assets/images/Testimonial-5.jpg" alt="Doctor 1" class="img-circle">
+                                                                    <div class="testimonial-details">
+                                                                        <h3>Dr. Jean Chalotte<span>Specialty: Cardiology</span></h3>
+                                                                        <p> I really appreciate the kindness of the medical team for me during my time at the hospital. My legs have recovered from the accident."</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

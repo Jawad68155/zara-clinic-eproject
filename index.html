@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Therapy Clinic</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" ></script>
+  <link rel="stylesheet" href="/assets/bootstrap/bootstrap-5.0.2-dist/css/bootstrap-reboot.min.css">
+  <style>
+
+    /* navbar style */
+    .navbar {
+      /* background-color: #4c98af;  */
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      opacity: 10;
+      font-weight: bold;
+      .nav-link{
+        color: rgb(35, 185, 185);
+      }
+    }
+
+    .special-link {
+      background-color: #FFC107; 
+      color: #be2b2b !important; 
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    body {
+      padding-top: 70px; 
+    }
+    .navbar-nav{
+      margin-right: 60px;
+    }
+    .navbar-nav .nav-link {
+    color: #fcfbfb !important; 
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #10df6d !important; 
+}
+
+
+  </style>
+  <style>
+    .carousel-buttons {
+        position: absolute;
+        top: 95%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        height: 50px;
+        width: 50px;
+        /* text-align: center; */
+        font-weight: bold;
+        grid-gap: 10px;
+    }
+  </style>
+  <style>
+    .service {
+      text-align: center;
+      margin-bottom: 30px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    
+    .service:hover {
+      border-color: #007bff;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+    
+    .service i {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    
+    .service h3 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+    
+    /* video section */
+    
+    .video {
+      position: relative;
+      padding-bottom: 56%; 
+      height: 0;
+      /* margin-left: 50px; */
+    }
+    
+    .video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .info {
+      /* padding: 20px; */
+      
+    }
+    
+    .icon-info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .icon-info i {
+      font-size: 24px;
+      /* margin-right: 10px; */
+    }
+    .icon-info p{
+      color: black;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .col-md-12 {
+        width: 100%;
+    }
+    
+    
+    
+    
+    </style>
+    
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="assets/images/logo.png" alt="Therapy Clinic Logo" height="50px">
+    </a>
+
+    <!-- navbar start -->
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="testimonial.html">Testimonials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="machine.html">Machine</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="attar.html">Attar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Team</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link special-link " href="Appointment.html">Appointment</a>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- navbar end -->
+
+  <!-- slider start -->
+  
+</nav>
+<div id="mainCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="overlay"></div> 
+      <img src="assets/images/carousel-1.jpg" class="d-block w-100 blurred" alt="First slide">
+      <div class="carousel-caption d-none d-lg-block">
+        <h5>ZARA THERAPY CLINIC</h5>
+        <h4>COMMITTED TO HELPING</h4>
+        <div class="carousel-buttons">
+          <a class="btn btn-primary" href="Appointment.html">Appointment</a>
+          <button type="button" class="btn btn-secondary">ContactUs</button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="overlay"></div> 
+      <img src="assets/images/carousel-2.jpg" class="d-block w-100 blurred" alt="Second slide">
+      <div class="carousel-caption d-none d-lg-block">
+        <h5>ZARA THERAPY CLINIC</h5>
+        <p>Zara Therapy Clinic is a sanctuary of healing and restoration, dedicated to providing comprehensive mental health services tailored to the unique needs of each individual. With a team of compassionate therapists and counselors, Zara offers a supportive and nurturing environment where clients can explore their emotions, develop coping strategies, and embark on a journey towards holistic well-being. From anxiety and depression to relationship issues and trauma recovery, the clinic offers a range of therapeutic modalities to address diverse challenges. Zara Therapy Clinic is committed to promoting mental wellness.</p>
+        <div class="carousel-buttons">
+          <a class="btn btn-primary" href="Appointment.html">Appointment</a>
+          <button type="button" class="btn btn-secondary">ContactUs</button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- Navigation controls -->
+   <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+</a>
+
+</div>
+
+
+<!-- slider end -->
+
+
+ 
+
+
+
+<!-- services Start -->
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-md-4">
+          <div class="service">
+              <i class="fas fa-user-md"></i>
+              <h3>Individual Therapy</h3>
+              <p>Our individual therapy sessions provide personalized support and guidance to help you navigate life's challenges and enhance your emotional well-being.</p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="service">
+              <i class="fas fa-user-friends"></i>
+              <h3>Couples Counseling</h3>
+              <p>Our couples counseling services focus on fostering healthier communication, resolving conflicts, and strengthening the bond between partners.</p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="service">
+              <i class="fas fa-child"></i>
+              <h3>Child & Adolescent Therapy</h3>
+              <p>We offer specialized therapy for children and adolescents, addressing issues such as anxiety, depression, behavioral problems, tense behavior and bad condition.</p>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- <div class="container">
+  <div class="row">
+      <div class="col-md-4">
+          <div class="service">
+              <i class="fas fa-user-md"></i>
+              <h3>Individual Therapy</h3>
+              <p>Our individual therapy sessions provide personalized support and guidance to help you navigate life's challenges and enhance your emotional well-being.</p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="service">
+              <i class="fas fa-user-friends"></i>
+              <h3>Couples Counseling</h3>
+              <p>Our couples counseling services focus on fostering healthier communication, resolving conflicts, and strengthening the bond between partners.</p>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="service">
+              <i class="fas fa-child"></i>
+              <h3>Child & Adolescent Therapy</h3>
+              <p>We offer specialized therapy for children and adolescents, addressing issues such as anxiety, depression, behavioral problems, and academic challenges.</p>
+          </div>
+      </div>
+  </div> -->
+
+  <!-- services end -->
+
+  <!-- video section start -->
+
+ <div class="container-fluid">
+  <div class="row mt-5 justify-content-center">
+    <div class="col-md-5 mt-3">
+        <div class="video">
+            <iframe width="100%" height="315" src="/assets/video/The Focal Therapy Clinic Patient Animation Video (360p).mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="col-md-5 mt-3">
+        <div class="info">
+            <div class="icon-info">
+                <i class="fas fa-calendar-alt"></i>
+                <h5>Flexible appointment scheduling</h5>
+                <!-- <p>The technologies and equipment are imported directly from major medical backgrounds in the world such as Japan and the United States</p> -->
+            </div>
+            <div class="icon-info">
+                <i class="fas fa-lock"></i>
+                <h5>Confidential and secure sessions</h5>
+                <!-- <p>Medical doctors with many years of experience and specialized training from advanced medical backgrounds in the world</p> -->
+            </div>
+        </div>
+    </div>
+</div>
+ </div>
+ <!-- video section end -->
+
+ <!-- banner section start -->
+</head>
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col">
+    <div class="banner">
+      <p>No matter whether your condition was caused by a sport, work accident or otherwise, we welcome the chance to serve you.</p>
+      <a class="btn btn-primary btn-lg" href="Appointment.html" role="button">Schedule Appointment</a>
+    </div>
+  </div>
+</div>
+
+<!-- banner section end -->
+
+<!-- cards section start -->
+
+
+<div class="container mt-3" style="margin-top: 50px;">
+  <h3>Meet The Team </h3 >
+<div class="row" style="margin-top: 40px;">
+  <div class="col-md-6">
+    <div class="card mb-3" >
+      <img src="/assets/images/doctor-1.jpg" class="card-img-top" alt="Doctor 1">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Anika Sharma</h5>
+        <p class="card-text">Specialty: Pediatrics </p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Contact: 123-456-7890 | Email: anika@example.com</small>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card mb-3">
+      <img src="/assets/images/doctor-2.jpeg" class="card-img-top" alt="Doctor 2">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Rahul Kapoor</h5>
+        <p class="card-text">Specialty: Cardiology</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Contact: 567-890-1234 | Email: rahul@example.com</small>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card mb-3">
+      <img src="/assets/images/doctor-3.jpg" class="card-img-top" alt="Doctor 3">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Priya Gupta</h5>
+        <p class="card-text">Specialty: Gynecology</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Contact: 987-654-3210 | Email: priya@example.com</small>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card mb-3">
+      <img src="/assets/images/doctor-4.jpg" class="card-img-top" alt="Doctor 4">
+      <div class="card-body">
+        <h5 class="card-title">Dr. Sanjay Patel</h5>
+        <p class="card-text">Specialty: Neurology</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Contact: 321-098-7654 | Email: sanjay@example.com</small>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<hr class="mt-4">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <i class="fas fa-star fa-2x"></i>
+    </div>
+  </div>
+</div>
+<!-- cards section end -->
+
+<!-- map section start-->
+
+<div id="map"></div>
+
+<!-- map section end -->
+
+<!-- testimonial start -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="text-center mb-4">Client Testimonials</h3>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-6">
+      <div class="testimonial">
+        <p>"My physical therapist is excellent! The whole office is very friendly and helpful. Physio is absolutely outstanding. Thank you very much for your great, attentive service"</p>
+      </div>
+    </div>
+  
+    <div class="col-md-6">
+      <div class="testimonial">
+        <p>"All of the staff was fantastic! The care I received was impeccable. Great place! I also love the availability of the Fit Plan for continued support after my discharge"</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="mt-4">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <i class="fas fa-star fa-2x"></i>
+    </div>
+  </div>
+</div>
+<!-- testimonial end -->
+
+<!-- footer start -->
+<footer class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4 text-center">
+              <h5>Follow Us</h5>
+              <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <h5>Contact Us</h5>
+              <p>Email: info@example.com</p>
+              <p>Phone: +1234567890</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <h5 class="text-center">About Zara</h5>
+              <p class="text-center">Zara Therapy Clinic is dedicated to providing therapy at the highest standard of quality in private room one-on-one care, with practices in a comfortable and professional environment. Our healthcare solutions are tailored to meet your individual needs. We are committed as primary healthcare professionals to help our clients resume their lifelong pursuit of health, fitness, and well-being.</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <p class="text-center">Subscribe to our newsletter to get the latest updates!</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6 offset-md-3">
+              <form class="footer-search">
+                  <div class="input-group">
+                      <input type="email" class="form-control" placeholder="Enter your email">
+                      <div class="input-group-append">
+                          <button class="btn btn-primary" type="submit">Get Email</button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="/assets/js/script.js"></script>
+<script src="/EPROJECT/assets/js/script.js"></script>
+</body>
+</html>

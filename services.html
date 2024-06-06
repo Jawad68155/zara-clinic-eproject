@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzibVkUqeM/pSxhTuJ9u5D7g6v" crossorigin="anonymous">
+  <style>
+    body{
+      background: linear-gradient(to bottom, #4187a8, #4c98af);
+      font-family: Arial, sans-serif;
+    }
+    .service {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      color: white;
+    }
+    .service img {
+      max-width: 50%;
+      height: auto;
+      margin-left: 20px; 
+      order: 2; 
+    }
+    .service-content {
+      flex: 1;
+      order: 1; 
+    }
+    .appointment-btn {
+    position: absolute; 
+    margin-top: 50px !important;
+    background-color: blue; 
+    color: white; 
+    border-radius: 20px; 
+    border: 2px solid blue; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+    left: 300px;
+    text-decoration: none;
+}
+
+.appointment-btn::before {
+    content: ""; 
+    position: absolute; 
+    top: -10px; 
+    left: -200px; 
+    width: 500px; 
+    height: 2px; 
+    background-color: blue; 
+}
+
+.appointment-btn:hover {
+  background-color: rgb(185, 81, 189); 
+    color: white; 
+    border-color: rgb(234, 234, 243); 
+    border-radius: 50px; 
+}
+
+.appointment-btn:hover::before {
+    background-color: blue;
+}
+h1{
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Our Services</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="service">
+          <div class="service-content">
+            <h2>Teeth Whitening</h2>
+            <p>Modern Equipment</p>
+            <p>Professional Dentist</p>
+            <p>24/7 Call Support</p>
+           <a class="btn btn-primary appointment-btn" href="Appointment.html">Appointment</a>
+          </div>
+          <img src="/assets/images/teethwhitening.jpg" alt="Teeth Whitening">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service">
+          <div class="service-content">
+            <h2>Hearing Aids</h2>
+            <p>Modern Equipment</p>
+            <p>Professional Dentist</p>
+            <p>24/7 Call Support</p>
+           <a class="btn btn-primary appointment-btn " href="Appointment.html">Appointment</a>
+          </div>
+          <img src="/assets/images/hearing.jpg" style="height: 330px; width: 500px;" alt="Hearing Aids">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service">
+          <div class="service-content">
+            <h2>Sphygmomanometer</h2>
+            <p>Modern Equipment</p>
+            <p>Professional Dentist</p>
+            <p>24/7 Call Support</p>
+            <a class="btn btn-primary appointment-btn" href="Appointment.html">Appointment</a>
+          </div>
+          <img src="/assets/images/sphyno.jpg" style="width: 500px;" alt="Sphygmomanometer">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service">
+          <div class="service-content">
+            <h2>Dental rootcanal</h2>
+            <p>Modern Equipment</p>
+            <p>Professional Dentist</p>
+            <p>24/7 Call Support</p>
+            <a class="btn btn-primary appointment-btn" href="Appointment.html">Appointment</a>
+          </div>
+          <img src="/assets/images/rootcanal.jpg" alt="Dental Implant">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service">
+          <div class="service-content">
+            <h2>Dental Implant</h2>
+            <p>Modern Equipment</p>
+            <p>Professional Dentist</p>
+            <p>24/7 Call Support</p>
+            <a class="btn btn-primary appointment-btn" href="Appointment.html">Appointment</a>
+          </div>
+          <img src="/assets/images/dentalimplement.jpg" alt="Dental Implant">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBud7Z4dDAp1/rXuKPuTkhDxGK03HNjpskxXbk3z0iZyhI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4187a8, #4c98af);
+      font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #0d89be, #ced2dd, #0d161a);
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    color: white;
+  }
+  
+  p {
+    color: #fdf8f8;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .social-icons a:last-child {
+    margin-right: 0;
+  }
+  
+  .feedback {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  #feedbackButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #feedbackBox {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  #feedbackText {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  #submitFeedback {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .feedback-question {
+    margin-bottom: 20px;
+  }
+  
+  .feedback-question label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .feedback-question select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+  }
+  
+  .feedback-question textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+  }
+  #backHomeButton{
+    margin-top: 10px;
+    color: #f2f3f5;
+    height: 50px;
+    background-color: #007bff;
+    border: transparent;
+    margin-left: 80%;
+  }

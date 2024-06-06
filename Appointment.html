@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zara Therapy Clinic Appointment Booking</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #4187a8, #4c98af);
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .card {
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .card-header {
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 15px 15px 0 0;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header text-center">
+            <h3>Zara Therapy Clinic Appointment Booking</h3>
+          </div>
+          <div class="card-body">
+            <form id="appointmentForm" novalidate>
+              <div class="form-group">
+                <label for="doctorSelect">Select Doctor:</label>
+                <select class="form-control" id="doctorSelect" required>
+                  <option value="">Select Doctor</option>
+                  <option>Dr. Ali Khan</option>
+                  <option>Dr. Aisha Patel</option>
+                  <option>Dr. Sameer Ahmed</option>
+                </select>
+                <div class="invalid-feedback">Please select a doctor.</div>
+              </div>
+              <div class="form-group">
+                <label for="serviceSelect">Select Service:</label>
+                <select class="form-control" id="serviceSelect" required>
+                  <option value="">Select Service</option>
+                  <option>Individual Therapy</option>
+                  <option>Couples Therapy</option>
+                  <option>Family Therapy</option>
+                  <option>Child Therapy</option>
+                </select>
+                <div class="invalid-feedback">Please select a service.</div>
+              </div>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" required>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="form-group">
+                <label for="contact">Contact Information:</label>
+                <input type="text" class="form-control" id="contact" required>
+                <div class="invalid-feedback">Please enter your contact information.</div>
+              </div>
+              <div class="form-group">
+                <label for="datetime">Preferred Date and Time:</label>
+                <input type="datetime-local" class="form-control" id="datetime" required>
+                <div class="invalid-feedback">Please select a date and time.</div>
+              </div>
+              <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea class="form-control" id="comments" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Submit Appointment Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        let forms = document.getElementsByClassName('needs-validation');
+        let validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+</body>
+</html>
